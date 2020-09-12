@@ -4,6 +4,7 @@
 /*  - Media Breakpoints
     - Globle-default
     - Loader
+    - layout 
     - Header
     - why-vendor
     - what-makes-vendor
@@ -16,6 +17,13 @@
 ====================================== */
 
 @import "global";
+
+
+/* ===================================
+    Layout styles
+====================================== */
+
+@import "layout.scss";
 
 /* ===================================
     typeface styles

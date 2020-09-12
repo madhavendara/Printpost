@@ -5,12 +5,56 @@
 
     .content-row
     {
+        position: relative;
         .title-container
         {
+            padding : 0rem 1.5rem;
             h1
             {
                 @include font-headline-1;
                 font-size: 2.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        .paragraph-container
+        {
+            padding : 0rem 1.5rem;
+
+            .play-video
+            {
+                width: 10rem;
+                display: block;
+                margin-left: auto;
+                position: absolute;
+                top: -5%;
+                right: 0;
+                .play-icon
+                {
+                    width: 100%;
+                }
+            }
+            p
+            {
+                @include paragraph;
+                padding-bottom: 1rem;
+            }
+
+            .get-started-btn
+            {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                margin: 0;
+                line-height: 100%;
+                font-size: 1.2rem;
+                color: #333333;
+                text-transform: uppercase;
+                font-size: 1rem;
+                background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: block;
+                margin-top: 20px;
             }
         }
     }

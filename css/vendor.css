@@ -4,6 +4,7 @@
 /*  - Media Breakpoints
     - Globle-default
     - Loader
+    - layout 
     - Header
     - why-vendor
     - what-makes-vendor
@@ -113,6 +114,9 @@ section {
   overflow: hidden;
 }
 
+/* ===================================
+    Layout styles
+====================================== */
 .content-row {
   display: flex;
   justify-content: space-between;
@@ -752,6 +756,12 @@ section {
   position: relative;
   padding-top: 7rem;
 }
+#what-makes-vendor .content-row {
+  position: relative;
+}
+#what-makes-vendor .content-row .title-container {
+  padding: 0rem 1.5rem;
+}
 #what-makes-vendor .content-row .title-container h1 {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
@@ -762,11 +772,51 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 @media (max-width: 500px) {
   #what-makes-vendor .content-row .title-container h1 {
     font-size: 5.5rem;
   }
+}
+#what-makes-vendor .content-row .paragraph-container {
+  padding: 0rem 1.5rem;
+}
+#what-makes-vendor .content-row .paragraph-container .play-video {
+  width: 10rem;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: -5%;
+  right: 0;
+}
+#what-makes-vendor .content-row .paragraph-container .play-video .play-icon {
+  width: 100%;
+}
+#what-makes-vendor .content-row .paragraph-container p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 172.19%;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+#what-makes-vendor .content-row .paragraph-container .get-started-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  line-height: 100%;
+  font-size: 1.2rem;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  margin-top: 20px;
 }
 
 @keyframes round-circle {
