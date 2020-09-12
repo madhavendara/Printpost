@@ -1,0 +1,88 @@
+/* ===================================
+    Table of Content
+====================================== */
+/*  - Media Breakpoints
+    - Globle-default
+    - Loader
+    - Header
+    - video popup css
+    - Artist why choose us  
+    - what makes us different 
+    - keypoints
+    - how it works
+    - contact
+    - css animation
+*/
+
+/* ===================================
+    Global styles
+====================================== */
+
+@import "global";
+
+
+/* ===================================
+    typeface styles
+====================================== */
+
+@import "typeface.scss";
+
+/* ===================================
+    Loader Styles  
+====================================== */
+@import "loader.scss";
+
+/* ===================================
+    Header Styles  
+====================================== */
+@import "header.scss";
+
+/* ===================================
+    video popup css
+====================================== */
+
+@import "videocss.scss";
+
+
+/* ===================================
+    Artist why choose us  
+====================================== */
+
+@import "artist-why.scss";
+
+/* ===================================
+    what makes us different 
+====================================== */
+
+@import "what-makes-us.scss";
+
+/* ===================================
+    Keypoints   
+====================================== */
+
+@import "keypoints.scss";
+
+
+/* ===================================
+    howitworks 
+====================================== */
+
+@import "howitworks.scss";
+
+
+/* ===================================
+    Contact
+====================================== */
+
+@import "contact.scss";
+
+/* ===================================
+    css animations styles
+====================================== */
+
+
+
+@keyframes round-circle{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }  

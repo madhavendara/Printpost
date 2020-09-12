@@ -1,0 +1,68 @@
+@mixin font-uppercase {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin : 0;
+}
+
+@mixin font-headline-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin : 0;
+    line-height: 100%;
+    background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $mobile)
+    {
+        font-size: 5.5rem;
+    }
+}
+
+@mixin font-headline-2
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin : 0;
+    line-height: 100%; 
+    font-size: 1.2rem;
+    color : #333333;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile)
+    {
+        font-size: 3rem;
+    }
+}
+
+@mixin font-headline-3
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin : 0;
+    line-height: 100%; 
+    font-size: 1.7rem;
+    background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: $mobile)
+    {
+        font-size: 3.5rem;
+    }
+}
+
+
+@mixin paragraph {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size : 16px;
+    line-height: 172.19%;
+    letter-spacing: 0.005em;
+    color : #000;
+    margin : 0;
+}
+
+

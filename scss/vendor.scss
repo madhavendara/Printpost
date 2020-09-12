@@ -1,0 +1,45 @@
+/* ===================================
+    Table of Content
+====================================== */
+/*  - Media Breakpoints
+    - Globle-default
+    - Loader
+    - Header
+    - why-vendor
+*/
+
+
+
+/* ===================================
+    Global styles
+====================================== */
+
+@import "global";
+
+/* ===================================
+    typeface styles
+====================================== */
+
+@import "typeface.scss";
+
+/* ===================================
+    Loader Styles  
+====================================== */
+@import "loader.scss";
+
+/* ===================================
+    Header Styles  
+====================================== */
+@import "header.scss";
+
+
+
+/* ===================================
+    Vendor-why styles
+====================================== */
+@import "why-vendor.scss";
+
+@keyframes round-circle{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }  

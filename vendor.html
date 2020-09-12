@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--loader start-->
+    <div class="loader-overlay" style="background-color : #fff; position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    display: flex;">
+        <div class="main-loader">
+            <div class="cirlce-line x-1"></div>
+            <div class="cirlce-line x-2"></div>
+            <div class="cirlce-line x-3"></div>
+            <img src="./images/loading.gif" alt="loading"/>
+            <h5>Vendor EXPERIENCE LOADING...</h5>
+        </div>
+    </div>
+    <!--loader End-->
+
+    <!--header-->
+    <section id="header">
+        <!-- Top Menu area -->
+
+        <div class="top-menu">
+            <div class="top-area">
+                <img src="./images/logo-icon.jpg" alt="printpost" class="top-menu-logo"/>
+                <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsu</p>
+            </div>
+
+            <ul class="menu-list">
+                <li class="list-item list-item-large">
+                    <a href="artist.html" class="item-link">for artist</a>
+                </li>
+                <li class="list-item list-item-large">
+                    <a href="#" class="item-link">for store</a>
+                </li>
+                <li class="list-item list-item-large dropdown-toggle">
+                    <a href="#" class="item-link">other services</a>
+
+                    <ul class="dropdown dropdown-none">
+                        <li class="dropdown-list">
+                            <a href="#" class="services-links">Product Offering</a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="#" class="services-links">White Label Print Fulfillment</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list-item list-item-small">
+                    <a href="#" class="item-link">Contact Us</a>
+                </li>
+                <li class="list-item list-item-small">
+                    <a href="#" class="item-link">Blog</a>
+                </li>
+            </ul>
+
+            <button class="close-btn">
+                <svg width="128" height="43" viewBox="0 0 128 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1633 12.8367C24.6678 13.3411 24.6678 14.1589 24.1633 14.6634L8.66333 30.1634C8.1589 30.6678 7.34106 30.6678 6.83663 30.1634C6.33221 29.6589 6.33221 28.8411 6.83663 28.3367L22.3366 12.8367C22.8411 12.3322 23.6589 12.3322 24.1633 12.8367Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83663 12.8367C7.34106 12.3322 8.1589 12.3322 8.66333 12.8367L24.1633 28.3367C24.6678 28.8411 24.6678 29.6589 24.1633 30.1634C23.6589 30.6678 22.8411 30.6678 22.3366 30.1634L6.83663 14.6634C6.33221 14.1589 6.33221 13.3411 6.83663 12.8367Z" fill="black"/>
+                    <path d="M48.118 21.926C48.118 20.158 48.5167 18.572 49.314 17.168C50.1113 15.7467 51.1947 14.6373 52.564 13.84C53.9507 13.0427 55.4847 12.644 57.166 12.644C59.142 12.644 60.8667 13.1207 62.34 14.074C63.8133 15.0273 64.888 16.3793 65.564 18.13H62.73C62.2273 17.038 61.4993 16.1973 60.546 15.608C59.61 15.0187 58.4833 14.724 57.166 14.724C55.9007 14.724 54.7653 15.0187 53.76 15.608C52.7547 16.1973 51.966 17.038 51.394 18.13C50.822 19.2047 50.536 20.47 50.536 21.926C50.536 23.3647 50.822 24.63 51.394 25.722C51.966 26.7967 52.7547 27.6287 53.76 28.218C54.7653 28.8073 55.9007 29.102 57.166 29.102C58.4833 29.102 59.61 28.816 60.546 28.244C61.4993 27.6547 62.2273 26.814 62.73 25.722H65.564C64.888 27.4553 63.8133 28.7987 62.34 29.752C60.8667 30.688 59.142 31.156 57.166 31.156C55.4847 31.156 53.9507 30.766 52.564 29.986C51.1947 29.1887 50.1113 28.088 49.314 26.684C48.5167 25.28 48.118 23.694 48.118 21.926ZM71.452 29.076H77.796V31H69.086V12.878H71.452V29.076ZM88.5246 31.182C86.8433 31.182 85.3093 30.792 83.9226 30.012C82.536 29.2147 81.4353 28.114 80.6206 26.71C79.8233 25.2887 79.4246 23.694 79.4246 21.926C79.4246 20.158 79.8233 18.572 80.6206 17.168C81.4353 15.7467 82.536 14.646 83.9226 13.866C85.3093 13.0687 86.8433 12.67 88.5246 12.67C90.2233 12.67 91.766 13.0687 93.1526 13.866C94.5393 14.646 95.6313 15.738 96.4286 17.142C97.226 18.546 97.6246 20.1407 97.6246 21.926C97.6246 23.7113 97.226 25.306 96.4286 26.71C95.6313 28.114 94.5393 29.2147 93.1526 30.012C91.766 30.792 90.2233 31.182 88.5246 31.182ZM88.5246 29.128C89.79 29.128 90.9253 28.8333 91.9306 28.244C92.9533 27.6547 93.7506 26.814 94.3226 25.722C94.912 24.63 95.2066 23.3647 95.2066 21.926C95.2066 20.47 94.912 19.2047 94.3226 18.13C93.7506 17.038 92.962 16.1973 91.9566 15.608C90.9513 15.0187 89.8073 14.724 88.5246 14.724C87.242 14.724 86.098 15.0187 85.0926 15.608C84.0873 16.1973 83.29 17.038 82.7006 18.13C82.1286 19.2047 81.8426 20.47 81.8426 21.926C81.8426 23.3647 82.1286 24.63 82.7006 25.722C83.29 26.814 84.0873 27.6547 85.0926 28.244C86.1153 28.8333 87.2593 29.128 88.5246 29.128ZM106.494 31.182C105.298 31.182 104.223 30.974 103.27 30.558C102.334 30.1247 101.597 29.5353 101.06 28.79C100.523 28.0273 100.245 27.152 100.228 26.164H102.75C102.837 27.0133 103.183 27.7327 103.79 28.322C104.414 28.894 105.315 29.18 106.494 29.18C107.621 29.18 108.505 28.9027 109.146 28.348C109.805 27.776 110.134 27.048 110.134 26.164C110.134 25.4707 109.943 24.9073 109.562 24.474C109.181 24.0407 108.704 23.7113 108.132 23.486C107.56 23.2607 106.789 23.018 105.818 22.758C104.622 22.446 103.66 22.134 102.932 21.822C102.221 21.51 101.606 21.0247 101.086 20.366C100.583 19.69 100.332 18.7887 100.332 17.662C100.332 16.674 100.583 15.7987 101.086 15.036C101.589 14.2733 102.291 13.684 103.192 13.268C104.111 12.852 105.159 12.644 106.338 12.644C108.037 12.644 109.423 13.0687 110.498 13.918C111.59 14.7673 112.205 15.894 112.344 17.298H109.744C109.657 16.6047 109.293 15.998 108.652 15.478C108.011 14.9407 107.161 14.672 106.104 14.672C105.116 14.672 104.31 14.932 103.686 15.452C103.062 15.9547 102.75 16.6653 102.75 17.584C102.75 18.2427 102.932 18.78 103.296 19.196C103.677 19.612 104.137 19.9327 104.674 20.158C105.229 20.366 106 20.6087 106.988 20.886C108.184 21.2153 109.146 21.5447 109.874 21.874C110.602 22.186 111.226 22.68 111.746 23.356C112.266 24.0147 112.526 24.916 112.526 26.06C112.526 26.944 112.292 27.776 111.824 28.556C111.356 29.336 110.663 29.9687 109.744 30.454C108.825 30.9393 107.742 31.182 106.494 31.182ZM118.374 14.802V20.86H124.978V22.81H118.374V29.05H125.758V31H116.008V12.852H125.758V14.802H118.374Z" fill="black"/>
+                    </svg>
+            </button>
+
+        </div>
+
+
+        <!-- Menu area -->
+            <img src="./images/logo-main.png" alt="printpost" class="logo-main-text"/>
+            <img src="./images/logo-icon.jpg" alt="printpost" class="brand-logo unloaded"/>
+            <h4>Your images Printed Your way.   Can’t find what you want? <a href="#">Call us now</a></h4>
+            <a href="#" class="menu-bar">
+                <img src="./images/bar.svg" class="w-100"/>
+            </a>
+            <div class="circle-line-container">
+                <div class="cirlce-line x-1"></div>
+                <div class="cirlce-line x-2"></div>
+                <div class="cirlce-line x-3"></div>
+            </div>
+
+        <!-- selection-area -->
+        <div class="selection-container">
+            <a class="type-container col type-artist" href="artist.html">
+                <div class="content-area">
+                    <h1>Artist</h1>
+                    <h2>I am an Artist</h2>
+                    <p>irure dolor in reprehenderit in voluptate velit reprehen </p>
+                    <img class="type-image" src="./images/artist.png"/>
+                </div>
+                <div class="hover-circle-left">
+                    <img src="./images/circle.png" class="w-100"/>
+                </div>
+            </a>
+            <div class="type-container col type-vendor">
+                <div class="content-area">
+                    <h1>Vendor</h1>
+                    <h2>I have a store</h2>
+                    <p>irure dolor in reprehenderit in voluptate velit reprehen </p>
+                    <img class="type-image" src="./images/vendor.png"/>
+                </div>
+                <div class="hover-circle-right">
+                    <img src="./images/circle.png" class="w-100"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+  <!--vendor-why-->
+
+<section id="vendor-why">
+
+    <div class="content-row">
+        <div class="content-col-1">
+            <h1>I have an online store</h1>
+        </div>
+        <div class="content-col-2">
+
+            <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+                tempora incidunt ut labore et dolore magnam aliquam quaera  quia dolor sit amet, consectetur,</p>
+            
+        </div>
+        <div class="content-col-1">
+            <a href="#" class="btn-gredient">why choose us</a>
+            <a href="#" class="btn-outline">Get started</a>
+        </div>
+    </div>
+
+    <div class="images-slide">
+        <div class="slide-container">
+            <img src="./images/vendor-images/vendor1.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor2.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor3.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor4.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor5.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor6.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor7.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor8.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor9.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor10.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor11.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor12.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor13.jpg" class="slide-image"/>
+            <img src="./images/vendor-images/vendor14.jpg" class="slide-image"/>
+        </div>
+    </div>
+
+    <img src="./images/element-2.png" class="vendor-element-1"/>
+    <img src="./images/dot-bg.png" class="vendor-element-2"/>
+
+
+</section>    
+
+  <!--what-makes-vendor-->
+  <section id="what-makes-vendor">
+      <div class="content-row">
+          <div class="col-50">
+              <h1>What makes us different</h1>
+          </div>
+      </div>
+  </section>
+ 
+    <!-- jQuery library-->
+    <script  src="js/jquery-3.3.1.js"></script>  
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>  
+    
+    <!-- Greensock scroll animation -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/MotionPathPlugin.min.js"></script>
+
+    <!-- Main javascript-->
+    <script  src="js/Header2.js"></script>
+    <script  src="js/vendor/vendor-why.js"></script>
+
+</body>
+</html>

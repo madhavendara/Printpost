@@ -1,0 +1,27 @@
+
+/* ===================================
+    Global styles
+====================================== */
+
+@import "global";
+
+/* ===================================
+    typeface styles
+====================================== */
+
+@import "typeface.scss";
+
+/* ===================================
+    Loader Styles  
+====================================== */
+@import "loader.scss";
+
+/* ===================================
+    Header Styles  
+====================================== */
+@import "header.scss";
+
+@keyframes round-circle{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }  

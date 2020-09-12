@@ -1,0 +1,127 @@
+#what-make-us
+{
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
+
+    &::after
+    {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 6rem;
+        background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 55.96%);
+    }
+
+    .content-row
+    {
+        @media (max-width: 996px)
+        {
+            max-width: 100%;
+        }
+
+        @media (min-width: 996px)
+        {
+            max-width: 70rem;
+        }
+        display: flex;
+        justify-content: space-between;
+        padding : 5rem 0rem;
+        margin : 0 auto;
+
+        @media (orientation: portrait) {
+            display: block;
+        }
+
+    
+        .image-col
+        {
+            text-align: center;
+
+            .get-started-btn
+            {
+                padding : 0.5rem 3rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                text-transform: uppercase;
+                display: inline-block;
+                border : 3px solid #C50677;
+                margin-top: 1rem;
+                color : black;
+
+            }
+        }
+
+        .content-col
+        {
+            flex-basis: 47%;
+            padding : 1.5%;
+
+            h1
+            {
+                @include font-headline-1;
+                font-size: 3rem;
+                padding-bottom: 2rem;
+            }
+
+            p
+            {
+                @include paragraph;
+                padding-left: 5rem;
+            }
+
+            .section-btn
+            {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                display: inline-block;
+                padding-left: 5rem;
+                padding-top : 1.5rem;
+            }
+
+            .play-video
+            {
+                width : 10rem;
+                display: block;
+                margin-left: auto;
+
+                .play-icon
+                {
+                    width: 100%;
+                }
+            }
+            .content-image
+            {
+                width : 100%;
+            }
+        }
+
+    }
+
+    .element-3
+    {
+        position: absolute;
+        width : 16rem;
+        left: 0;
+        bottom:  5rem;
+        .element-img
+        {
+            width : 100%;
+        }
+    }
+
+    .circle-line-container
+    {
+        top : 84%;
+    }
+
+
+}

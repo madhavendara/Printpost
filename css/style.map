@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"\r\n/* ===================================\r\n    Loader Styles  \r\n====================================== */\r\n.loader-overlay {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    right: 0;\r\n    z-index: 999999;\r\n    display: flex;\r\n    .main-loader\r\n    {\r\n        width : 200px;\r\n        height: 200px;\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        margin-top: 12%;\r\n        text-align: center;\r\n        img\r\n        {\r\n            width : 100%;\r\n            display : block;\r\n            \r\n        }\r\n        h5\r\n        {\r\n            font-family: 'Lato', sans-serif;\r\n            text-transform: uppercase;\r\n            font-weight: 400;\r\n           font-size: 15.5px;\r\n           line-height: 144.19%;\r\n            letter-spacing: 0.21em;\r\n            color : #0e0e0e;\r\n        }\r\n    }\r\n  }"
+	],
+	"names": [],
+	"mappings": "AACA;;yCAEyC;;AACzC,AAAA,eAAe,CAAC;EACZ,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,MAAM,EAAE,CAAC;EACT,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;CA0Bd;;;AAjCH,AAQI,eARW,CAQX,YAAY,CACZ;EACI,KAAK,EAAG,KAAK;EACb,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,UAAU,EAAE,GAAG;EACf,UAAU,EAAE,MAAM;CAiBrB;;;AAhCL,AAgBQ,eAhBO,CAQX,YAAY,CAQR,GAAG,CACH;EACI,KAAK,EAAG,IAAI;EACZ,OAAO,EAAG,KAAK;CAElB;;;AArBT,AAsBQ,eAtBO,CAQX,YAAY,CAcR,EAAE,CACF;EACI,WAAW,EAAE,kBAAkB;EAC/B,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;EACjB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,OAAO;EACnB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAG,OAAO;CAClB"
+}
