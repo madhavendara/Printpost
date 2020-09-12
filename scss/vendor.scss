@@ -6,6 +6,7 @@
     - Loader
     - Header
     - why-vendor
+    - what-makes-vendor
 */
 
 
@@ -38,6 +39,12 @@
     Vendor-why styles
 ====================================== */
 @import "why-vendor.scss";
+
+
+/* ===================================
+    what-makes-vendor
+====================================== */
+@import "what-makes-vendor.scss";
 
 @keyframes round-circle{
     from {transform: rotate(0deg);}

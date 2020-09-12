@@ -103,6 +103,35 @@ section {
   overflow: hidden;
 }
 
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.content-row .content-col-1 {
+  flex-basis: 25%;
+}
+.content-row .content-col-2 {
+  flex-basis: 48%;
+}
+.content-row .col-30 {
+  flex-basis: 30%;
+}
+.content-row .col-40 {
+  flex-basis: 40%;
+}
+.content-row .col-50 {
+  flex-basis: 50%;
+}
+.content-row .col-60 {
+  flex-basis: 60%;
+}
+.content-row .col-70 {
+  flex-basis: 70%;
+}
+
 /* ===================================
     typeface styles
 ====================================== */

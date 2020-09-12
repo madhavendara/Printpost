@@ -1,0 +1,17 @@
+#what-makes-vendor
+{
+    position: relative;
+    padding-top: 7rem;
+
+    .content-row
+    {
+        .title-container
+        {
+            h1
+            {
+                @include font-headline-1;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

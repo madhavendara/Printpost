@@ -6,6 +6,7 @@
     - Loader
     - Header
     - why-vendor
+    - what-makes-vendor
 */
 /* ===================================
     Global styles
@@ -110,6 +111,35 @@ body {
 section {
   max-width: 100%;
   overflow: hidden;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.content-row .content-col-1 {
+  flex-basis: 25%;
+}
+.content-row .content-col-2 {
+  flex-basis: 48%;
+}
+.content-row .col-30 {
+  flex-basis: 30%;
+}
+.content-row .col-40 {
+  flex-basis: 40%;
+}
+.content-row .col-50 {
+  flex-basis: 50%;
+}
+.content-row .col-60 {
+  flex-basis: 60%;
+}
+.content-row .col-70 {
+  flex-basis: 70%;
 }
 
 /* ===================================
@@ -596,23 +626,6 @@ section {
 /* ===================================
     Vendor-why styles
 ====================================== */
-.content-row {
-  display: flex;
-  justify-content: space-between;
-  width: 70rem;
-  margin: 0 auto;
-  align-items: center;
-}
-.content-row .content-col-1 {
-  flex-basis: 25%;
-}
-.content-row .content-col-2 {
-  flex-basis: 48%;
-}
-.content-row .col-50 {
-  flex-basis: 50%;
-}
-
 #vendor-why {
   padding-top: 10rem;
   position: relative;
@@ -732,6 +745,30 @@ section {
     left: -170%;
   }
 }
+/* ===================================
+    what-makes-vendor
+====================================== */
+#what-makes-vendor {
+  position: relative;
+  padding-top: 7rem;
+}
+#what-makes-vendor .content-row .title-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 100%;
+  background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  #what-makes-vendor .content-row .title-container h1 {
+    font-size: 5.5rem;
+  }
+}
+
 @keyframes round-circle {
   from {
     transform: rotate(0deg);
