@@ -16,5 +16,7 @@ gsap.from(".what-makes-circle", {
     marginTop : '50%',
   })
 
+  
+
 
 

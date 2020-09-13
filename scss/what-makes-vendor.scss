@@ -2,6 +2,7 @@
 {
     position: relative;
     padding-top: 7rem;
+    padding-bottom: 7rem;
 
     .content-row
     {
@@ -57,5 +58,32 @@
                 margin-top: 20px;
             }
         }
+    }
+
+    .element-left
+    {
+        position: absolute;
+        top : 50%;
+        left: -5%;
+        width : 14rem;
+        z-index: -1;
+    }
+
+    .element-right
+    {
+        position: absolute;
+        top : 60%;
+        right: -5%;
+        width : 15rem;
+        z-index: -1;
+    }
+
+    .dot-center
+    {
+        position: absolute;
+        top : 80%;
+        right: 5%;
+        width : 36rem;
+        z-index: -1;
     }
 }

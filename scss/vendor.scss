@@ -8,6 +8,7 @@
     - Header
     - why-vendor
     - what-makes-vendor
+    - how-you-make-money
 */
 
 
@@ -53,6 +54,12 @@
     what-makes-vendor
 ====================================== */
 @import "what-makes-vendor.scss";
+
+
+/* ===================================
+    how-you-make-money
+====================================== */
+@import "how-you-make-money.scss";
 
 @keyframes round-circle{
     from {transform: rotate(0deg);}

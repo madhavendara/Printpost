@@ -65,4 +65,19 @@
     margin : 0;
 }
 
+p
+{
+    @include paragraph;
+}
+
+h1
+{
+    @include font-headline-1;
+}
+
+h3
+{
+    @include font-headline-3;
+}
+
 

@@ -1,0 +1,140 @@
+#how-you-make-money
+{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    position: relative;
+
+    .progress-bar
+    {
+        position: absolute;
+        width : 6px;
+        right: 3%;
+        top : 10%;
+        height: 20rem;
+        background : lightgray;
+        z-index: 999;
+        border-radius: 12px;
+    }
+
+    h1
+    {
+        @include font-headline-1;
+        text-align: left;
+        font-size: 2.5rem;
+        padding : 0rem 2rem;
+    }
+
+    .step-section
+    {
+        img
+        {
+            max-width: 100%;
+        }
+
+        .col-50
+        {
+            box-sizing: border-box;
+            padding : 0.8rem 2rem;
+        }
+
+        .product-card
+        {
+            box-sizing: border-box;
+            width : 73%;
+            margin-left: auto;
+        }
+    }
+
+    .step-section-graphics
+    {
+        img
+        {
+            display: block;
+            width : 75%;
+            margin-left: auto;
+        }
+    }
+
+    .step-2
+    {
+        .step-section-graphics
+        {
+            img
+            {
+                display: block;
+                width : 75%;
+                margin-right: auto;
+            }
+        }
+
+        .step-section-content
+        {
+            h3
+            {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            img
+            {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .step-3
+    {
+        h3
+        {
+            padding-left : 3rem;
+            padding-bottom: 0.8rem;
+        }
+    }
+
+
+    .content-table
+    {
+        padding : 0rem 3rem;
+        margin-right: auto;
+        .table-row
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .table-cell
+            {
+                flex : 1;
+
+                h5
+                {
+                    @include paragraph;
+                    font-size: 20px;
+                }
+
+                h4
+                {
+                    @include paragraph;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                &:nth-child(1)
+                {
+                    text-align: left;
+                }
+
+                &:nth-child(2)
+                {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+
+#cirlc-of-life
+{
+    height: 100vh;
+    width : 100%;
+}
