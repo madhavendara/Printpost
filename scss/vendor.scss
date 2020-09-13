@@ -9,6 +9,7 @@
     - why-vendor
     - what-makes-vendor
     - how-you-make-money
+    - how-it-vendor
 */
 
 
@@ -60,6 +61,16 @@
     how-you-make-money
 ====================================== */
 @import "how-you-make-money.scss";
+
+
+/* ===================================
+    how-it-vendor
+====================================== */
+@import "how-it-vendor.scss";
+
+
+
+
 
 @keyframes round-circle{
     from {transform: rotate(0deg);}

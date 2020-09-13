@@ -37,17 +37,17 @@ jQuery(function ($) {
         $('.dropdown').toggleClass('dropdown-none');
     })
 
-    // $('.play-video').on('click',function(){
-    //     gsap.to("#artist-video", {duration: 0.5, display : 'flex', transform : 'translateY(0%)'});
-    //   })
+    $('.play-video').on('click',function(){
+        gsap.to("#artist-video", {duration: 0.5, display : 'flex', transform : 'translateY(0%)'});
+      })
 
-    //   $('.video-close').on('click',function(){
-    //     gsap.to("#artist-video", {duration: 0.5, display : 'none', transform : 'translateY(0%)'});
+      $('.video-close').on('click',function(){
+        gsap.to("#artist-video", {duration: 0.5, display : 'none', transform : 'translateY(0%)'});
 
-    //     var vid = document.getElementById("myVideo");
+        var vid = document.getElementById("myVideo");
 
-    //     vid.pause();
-    //   })  
+        vid.pause();
+      })  
 });
 
 

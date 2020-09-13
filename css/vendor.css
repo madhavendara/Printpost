@@ -9,6 +9,7 @@
     - why-vendor
     - what-makes-vendor
     - how-you-make-money
+    - how-it-vendor
 */
 /* ===================================
     Global styles
@@ -673,6 +674,28 @@ h3 {
 /* ===================================
     Vendor-why styles
 ====================================== */
+.btn-outline {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  line-height: 100%;
+  font-size: 1.2rem;
+  color: #333333;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  padding: 0.7rem 0rem;
+  color: #000;
+  border: 2px solid #C50677;
+}
+@media (max-width: 500px) {
+  .btn-outline {
+    font-size: 3rem;
+  }
+}
+
 #vendor-why {
   padding-top: 10rem;
   position: relative;
@@ -721,27 +744,6 @@ h3 {
 }
 @media (max-width: 500px) {
   #vendor-why .btn-gredient {
-    font-size: 3rem;
-  }
-}
-#vendor-why .btn-outline {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  line-height: 100%;
-  font-size: 1.2rem;
-  color: #333333;
-  text-transform: uppercase;
-  width: 80%;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  padding: 0.7rem 0rem;
-  color: #000;
-  border: 2px solid #C50677;
-}
-@media (max-width: 500px) {
-  #vendor-why .btn-outline {
     font-size: 3rem;
   }
 }
@@ -899,8 +901,17 @@ h3 {
   top: 10%;
   height: 20rem;
   background: lightgray;
-  z-index: 999;
+  z-index: 1;
   border-radius: 12px;
+}
+#how-you-make-money .progress-bar .progress-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+  background: #C50677;
+  bottom: 75%;
 }
 #how-you-make-money h1 {
   font-family: "Poppins", sans-serif;
@@ -937,6 +948,9 @@ h3 {
   width: 75%;
   margin-left: auto;
 }
+#how-you-make-money .step-2 {
+  padding-top: 5rem;
+}
 #how-you-make-money .step-2 .step-section-graphics img {
   display: block;
   width: 75%;
@@ -948,6 +962,9 @@ h3 {
 }
 #how-you-make-money .step-2 .step-section-content img {
   padding-top: 1rem;
+}
+#how-you-make-money .step-3 {
+  padding-top: 5rem;
 }
 #how-you-make-money .step-3 h3 {
   padding-left: 3rem;
@@ -991,10 +1008,94 @@ h3 {
 #how-you-make-money .content-table .table-row .table-cell:nth-child(2) {
   text-align: right;
 }
+#how-you-make-money .dot-bg {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  z-index: -1;
+  width: 32rem;
+}
+#how-you-make-money .element-4 {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  z-index: -1;
+  width: 16rem;
+}
+#how-you-make-money .element-5 {
+  position: absolute;
+  left: 5%;
+  top: 76%;
+  z-index: -1;
+  width: 24rem;
+}
+#how-you-make-money .btn-outline {
+  max-width: 20rem;
+  margin-right: auto;
+  margin-top: 7rem;
+}
 
 #cirlc-of-life {
   height: 100vh;
   width: 100%;
+}
+
+/* ===================================
+    how-it-vendor
+====================================== */
+#how-it-works-vendor {
+  padding-top: 12rem;
+  position: relative;
+}
+#how-it-works-vendor .how-it-steps {
+  position: absolute;
+  right: -14rem;
+  top: -27rem;
+  z-index: -1;
+  width: 50.9rem;
+  height: 63.81rem;
+}
+#how-it-works-vendor .how-it-steps img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+#how-it-works-vendor .how-it-steps img:nth-child(1) {
+  opacity: 1;
+}
+#how-it-works-vendor .step-row {
+  padding-bottom: 8rem;
+}
+#how-it-works-vendor .step-row .col-50 {
+  max-width: 45%;
+}
+#how-it-works-vendor .step-row .col-50 .step-content-image {
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+#how-it-works-vendor .step-row .steps-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#how-it-works-vendor .step-row .steps-content .step-number {
+  flex: 3;
+  padding-right: 0.5rem;
+}
+#how-it-works-vendor .step-row .steps-content .step-number h1 {
+  font-size: 2.5rem;
+}
+#how-it-works-vendor .step-row .steps-content .step-text-content {
+  flex: 8;
+}
+#how-it-works-vendor .step-row .steps-content .step-text-content h4 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes round-circle {
