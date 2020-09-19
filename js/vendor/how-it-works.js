@@ -67,7 +67,25 @@ function good(){
     onComplete : good    
   })
 
-  console.log('good');
+  }
+
+  else if(i == 3)
+  {
+    gsap.to($('.how-it-steps').children().eq(i), {
+      scrollTrigger: {
+          trigger : '#how-it-works-vendor',
+          scrub : true,
+          start : '+=' + (350 + 350*i),
+          marker : true,
+          end : '+=' + (500 + 325*i),
+      },
+      motionPath : [
+        {opacity : '1'}, 
+        {opacity : '0'}
+      ],
+      ease: "none",
+      onComplete : good    
+    })
   }
 
   else

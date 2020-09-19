@@ -1,0 +1,40 @@
+<svg width="149" height="149" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+<defs id="someDefs">
+        <style id="style1">
+            .blue-fill {
+                fill : blue;
+            }
+
+            path
+            {
+                transform: translate(12%, 12%);
+            }
+
+             #backimg
+                {
+                    animation-name: loop_circle;
+                    animation-iteration-count: infinite;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                }
+
+                @keyframes loop_circle {
+                0% { opacity: 0.12; transform : scale(1,1); transform-origin : center center; }
+                100% {opacity: 0; transform : scale(1.15,1.15); transform-origin : center center; }
+                }
+        </style>
+    </defs>
+<circle opacity="0.12" cx="100" cy="100" r="74.5" fill="#C50677" id='backimg'/>
+<circle cx="100" cy="100" r="55.5" fill="#C50677" />
+<circle cx="100" cy="100" r="55.5" fill="url(#paint0_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M87.7041 61.1084C88.3023 60.5101 89.2723 60.5101 89.8705 61.1084L99.062 70.2998C99.6603 70.8981 99.6603 71.868 99.062 72.4663L89.8705 81.6578C89.2723 82.256 88.3023 82.256 87.7041 81.6578C87.1058 81.0595 87.1058 80.0896 87.7041 79.4913L95.8123 71.3831L87.7041 63.2748C87.1058 62.6766 87.1058 61.7066 87.7041 61.1084Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear" x1="123.764" y1="131.062" x2="3.49115" y2="105.912" gradientUnits="userSpaceOnUse">
+<stop stop-color="#038AC7"/>
+<stop offset="0.648193" stop-color="#C50677"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

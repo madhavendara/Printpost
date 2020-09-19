@@ -103,7 +103,10 @@
                         }
                         h3
                         {
-                            color : #fff;
+                            color: #fff;
+                            background: none;
+                            -webkit-background-clip: initial !important;
+                            -webkit-text-fill-color: #fff !important;
                         }
 
                         p

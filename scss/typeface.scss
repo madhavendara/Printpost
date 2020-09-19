@@ -54,6 +54,20 @@
     }
 }
 
+@mixin font-headline-4
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin : 0;
+    line-height: 100%; 
+    font-size: 1.5rem;
+
+    @media (max-width: $mobile)
+    {
+        font-size: 16px;
+    }
+}
+
 
 @mixin paragraph {
     font-family: 'Lato', sans-serif;
@@ -80,4 +94,8 @@ h3
     @include font-headline-3;
 }
 
+h6
+{
+    @include font-headline-4;
+}
 

@@ -148,6 +148,19 @@ h3 {
   }
 }
 
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  line-height: 100%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
 /* ===================================
     Loader Styles  
 ====================================== */

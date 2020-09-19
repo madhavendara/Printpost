@@ -77,9 +77,38 @@ if(window.innerHeight > window.innerWidth){
         scrub : 0.4,
         pin: true,
         start : '-=100',
-        end : "+=8500"
+        end : "+=3500"
     },
     // transform:  'translate(-50%, 0%) rotate(360deg)',
+  })
+
+  gsap.to(".circle-center", {
+    scrollTrigger: {
+        trigger : '#key-points',
+        scrub : true,
+        start : '+=400',
+        // snap: {
+        //   snapTo: 1/8,
+        //   duration: { min: 0.1, max: 0.3 },
+        //   anticipatePin: 0.3,
+        //   delay: 0
+        // },
+        marker : true,
+        end : "+=3000",
+        onUpdate: self => aredekho(self.progress)
+    },
+    motionPath:  [
+      {rotate :-40}, 
+      {rotate : -80},
+      {rotate : -120},
+      {rotate : -160},
+      {rotate : -200},
+      {rotate : -240},
+      {rotate : -280},
+      {rotate : -320}
+    ],
+    ease: "none",
+    
   })
 
 }
@@ -91,42 +120,44 @@ else
         trigger : '#key-points',
         scrub : 0.4,
         pin: true,
-        end : "+=8500"
+        end : "+=6500"
     },
     // transform:  'translate(-50%, 0%) rotate(360deg)',
+  })
+
+  gsap.to(".circle-center", {
+    scrollTrigger: {
+        trigger : '#key-points',
+        scrub : true,
+        start : '+=400',
+        // snap: {
+        //   snapTo: 1/8,
+        //   duration: { min: 0.1, max: 0.3 },
+        //   anticipatePin: 0.3,
+        //   delay: 0
+        // },
+        marker : true,
+        end : "+=6000",
+        onUpdate: self => aredekho(self.progress)
+    },
+    motionPath:  [
+      {rotate :-40}, 
+      {rotate : -80},
+      {rotate : -120},
+      {rotate : -160},
+      {rotate : -200},
+      {rotate : -240},
+      {rotate : -280},
+      {rotate : -320}
+    ],
+    ease: "none",
+    
   })
 }
 
 
 
-gsap.to(".circle-center", {
-  scrollTrigger: {
-      trigger : '#key-points',
-      scrub : true,
-      start : '+=400',
-      snap: {
-        snapTo: 1/8,
-        duration: { min: 0.1, max: 0.3 },
-        anticipatePin: 0.3,
-        delay: 0
-      },
-      marker : true,
-      end : "+=8000",
-      onUpdate: self => aredekho(self.progress)
-  },
-  motionPath:  [
-    {rotate :-40}, 
-    {rotate : -80},
-    {rotate : -120},
-    {rotate : -160},
-    {rotate : -200},
-    {rotate : -240},
-    {rotate : -280},
-    {rotate : -320}
-  ],
-  ease: "none",
-  
-})
+
 
 
 var i = 0;
@@ -213,7 +244,11 @@ function aredekho(progress){
   var current_status;
   for(var i = 0; i <stages.length; i++)
   {
-    if(stages[i] == progress)
+    var status = stages.reduce(function(prev, curr) {
+      return (Math.abs(curr - progress) < Math.abs(prev - progress) ? curr : prev);
+    });
+
+    if(stages[i] == status)
     {
       current_status = i+1;
     }
