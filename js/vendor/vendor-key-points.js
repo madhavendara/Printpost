@@ -27,8 +27,37 @@ $('.expend-btn').on('click',function(){
   $(this).parent().toggleClass('active-content-key');
 })
 
+if(window.innerHeight < window.innerWidth && window.innerWidth/window.innerHeight < 1.7 )
 
-gsap.to(".key-point-all-container", {
+{
+  gsap.to(".key-point-all-container", {
+    scrollTrigger: {
+        trigger : '#vendor-key-points',
+        scrub : 0.2,
+        start : '+=0',
+        marker : true,
+        end : "+=16000",
+        pin : "#vendor-key-points",
+        onUpdate: self => areyaar(self.progress)
+    },
+    motionPath:  [
+      {top :-(13/100 * window.innerHeight / 1.65 * 1.4), left : -(49/100 * window.innerWidth* 1.4)}, 
+      {top :-(100/100 * window.innerHeight / 1.65 * 1.4), left : -(8/100 * window.innerWidth* 1.4)},
+      {top :-(84/100 * window.innerHeight / 1.65 * 1), left : -(76/100 * window.innerWidth* 1)},
+      {top :-(81/100 * window.innerHeight / 1.65 * 1), left : -(130/100 * window.innerWidth* 1)},
+      {top :-(56/100 * window.innerHeight / 1.65 * 1), left : -(187/100 * window.innerWidth* 1)},
+      {top :-(160/100 * window.innerHeight / 1.65 * 1), left : -(63/100 * window.innerWidth* 1)},
+      {top :-(185/100 * window.innerHeight / 1.65 * 1), left : -(139/100 * window.innerWidth* 1)},
+      {top :-(145/100 * window.innerHeight / 1.65 * 1), left : -(264/100 * window.innerWidth* 1)}
+
+    ],
+    ease: "none",
+    
+  })
+}
+
+else if(window.innerHeight < window.innerWidth){
+  gsap.to(".key-point-all-container", {
     scrollTrigger: {
         trigger : '#vendor-key-points',
         scrub : 0.2,
@@ -52,6 +81,93 @@ gsap.to(".key-point-all-container", {
     ease: "none",
     
   })
+}
+
+else
+{
+  gsap.to(".key-point-all-container", {
+    scrollTrigger: {
+        trigger : '#vendor-key-points',
+        scrub : 0.2,
+        start : '+=0',
+        marker : true,
+        end : "+=16000",
+        pin : "#vendor-key-points",
+        onUpdate: self => areyaar(self.progress)
+    },
+    motionPath:  [
+      {top :-(13/100 * window.innerHeight/3 * 1.4), left : -(49/100 * window.innerWidth* 1.4)}, 
+      {top :-(100/100 * window.innerHeight/3 * 1.4), left : -(8/100 * window.innerWidth* 1.4)},
+      {top :-(84/100 * window.innerHeight/3 * 1), left : -(76/100 * window.innerWidth* 1)},
+      {top :-(81/100 * window.innerHeight/3 * 1), left : -(130/100 * window.innerWidth* 1)},
+      {top :-(56/100 * window.innerHeight/3 * 1), left : -(187/100 * window.innerWidth* 1)},
+      {top :-(160/100 * window.innerHeight/3 * 1), left : -(63/100 * window.innerWidth* 1)},
+      {top :-(185/100 * window.innerHeight/3 * 1), left : -(139/100 * window.innerWidth* 1)},
+      {top :-(145/100 * window.innerHeight/3 * 1), left : -(264/100 * window.innerWidth* 1)}
+
+    ],
+    ease: "none",
+    
+  })
+}
+
+var stephref = ['#step1','#step2','#step3','#step4','#step5','#step6','#step7','#step8','#step9'];
+$('.steps-title').on('click',function(){
+  // var setepOffset = $('#vendor-key-points').offset().top;
+
+ for(var i = 0; i <= 8; i++)
+ {
+    if(stephref[i] == $(this).attr('href'))
+    {
+      var totalOffset;
+
+      switch(i) {
+        case 0:
+          totalOffset = (window.innerHeight * 2.4 * i);
+          break;
+        case 1:
+          totalOffset = (window.innerHeight * 2.4 * i);
+          break;         
+          
+        case 2:
+          totalOffset = (window.innerHeight * 2.6 * i);
+          break;
+        case 3:
+          totalOffset = (window.innerHeight * 2.6 * i);
+          break; 
+          
+          case 4:
+          totalOffset = (window.innerHeight * 2.65 * i);
+          break;
+        case 5:
+          totalOffset = (window.innerHeight * 2.6 * i);
+          break;
+
+       case 6:
+            totalOffset = (window.innerHeight * 3 * i);
+            break;  
+
+      case 7:
+        totalOffset = (window.innerHeight * 3 * i);
+        break;  
+              
+        case 8:
+        totalOffset = (window.innerHeight * 3.15 * i);
+        break;            
+
+          
+      
+        default:
+          totalOffset = (window.innerHeight * 1.7 * i);
+
+      }
+      
+      gsap.to(window, {duration: 2, scrollTo: {y: "#keyid", offsetY: -(totalOffset)}});
+    }
+ }
+
+
+})
 
   
   function areyaar(rooop) {

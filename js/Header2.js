@@ -20,7 +20,7 @@ jQuery(function ($) {
             duration : 1
         }).delay(1.5);
 
-        gsap.to(window, {duration: 2, scrollTo:"#vendor-why"}).delay(1.5);
+        // gsap.to(window, {duration: 2, scrollTo:"#vendor-why"}).delay(1.5);
  
     })
 

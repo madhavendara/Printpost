@@ -1,4 +1,22 @@
 
+gsap.utils.toArray(".step-back-graphics").forEach(box => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: box,
+      scrube : 0.3,
+      start: "top 95%"
+    },
+
+  });
+
+  tl.from(box, {
+    bottom:  0
+    
+  });
+});
+
+
+
 gsap.from(".how-it-steps", {
     scrollTrigger: {
         trigger : '#how-it-works-vendor',
@@ -6,7 +24,7 @@ gsap.from(".how-it-steps", {
         start : '+=50',
         end: `+=100`,
     },
-    opacity : '0'
+    opacity : '-4rem'
   })
 
 

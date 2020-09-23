@@ -59,15 +59,21 @@ gsap.to(".progress-step", {
     transform : 'translate(0,-100px)'
   })
 
-  gsap.to(".product-card", {
-    scrollTrigger: {
-        trigger : '#how-you-make-money',
-        scrub : 0.4,
-        start : '+=400',
-        end: `+=600`,
-    },
-    transform : 'translate(0px, 150px) translateZ(0)'
-  })
+  if(window.innerHeight < window.innerWidth){
+
+    gsap.to(".product-card", {
+      scrollTrigger: {
+          trigger : '#how-you-make-money',
+          scrub : 0.4,
+          start : '+=400',
+          end: `+=600`,
+      },
+      transform : 'translate(0px, 150px) translateZ(0)'
+    })
+    
+  }
+
+  
 
   gsap.from(".element-5", {
     scrollTrigger: {

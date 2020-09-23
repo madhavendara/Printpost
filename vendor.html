@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/ckin.css">
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -26,6 +27,14 @@
         </div>
     </div>
     <!--loader End-->
+
+    <div id="artist-video">
+
+        <img src="./images/cross.png" class="video-close"/>
+        <div id="videCont">
+            <video id="myVideo" poster="ckin.jpg" src="vendor-video.mp4" data-ckin="default" data-overlay="1" data-title="The curious case of Chameleon..."></video>
+        </div>
+    </div>
 
     <!--header-->
     <section id="header">
@@ -57,7 +66,9 @@
                     </ul>
                     
                 </li>
-
+                <li class="list-item list-item-small">
+                    <a href="#" class="item-link">About Us</a>
+                </li>
                 <li class="list-item list-item-small">
                     <a href="#" class="item-link">Contact Us</a>
                 </li>
@@ -192,6 +203,8 @@
       <img class="element-right" src="./images/element-3.png"/>
       <img class="dot-center" src="./images/dot-bg.png"/>
   </section>
+
+  <section id="keyid"></section>
   
   <section id="vendor-key-points">
 
@@ -228,6 +241,8 @@
                 </div>
 
                 <img src="./images/keypoint-images/keypoint-1.jpg"/>
+
+
             </div>
             <div class="keys-point-main keys-point-main-2">
                 <h6>Speedy Service </h6>
@@ -247,7 +262,7 @@
                 <img src="./images/keypoint-images/keypoint-2.jpg"/>
             </div>
             <div class="keys-point-main keys-point-main-3">
-                <h6>No Up front costs </h6>
+                <h6>12,000 + images</h6>
                 <p>voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
                     consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
                      magnam aliquam quaerat voluptatem.
@@ -906,6 +921,8 @@
                     </div>
                 </div>
                 <img src="./images/how-it-vendor/vendor-step-img-01.jpg" class="step-content-image"/>
+
+                <img class="step-back-graphics" src="./images/how-it-vendor/step-graphic-1.png"/>
             </div>
         </div>
 
@@ -921,6 +938,7 @@
                     </div>
                 </div>
                 <img src="./images/how-it-vendor/vendor-step-img-02.jpg" class="step-content-image"/>
+                <img class="step-back-graphics" src="./images/how-it-vendor/step-graphic-2.png"/>
             </div>
         </div>
 
@@ -936,6 +954,7 @@
                     </div>
                 </div>
                 <img src="./images/how-it-vendor/vendor-step-img-03.jpg" class="step-content-image"/>
+                <img class="step-back-graphics" src="./images/how-it-vendor/step-graphic-3.png"/>
             </div>
         </div>
 
@@ -951,6 +970,7 @@
                     </div>
                 </div>
                 <img src="./images/how-it-vendor/vendor-step-img-04.jpg" class="step-content-image"/>
+                <img class="step-back-graphics" src="./images/how-it-vendor/step-graphic-1.png"/>
             </div>
         </div>
 
@@ -966,6 +986,7 @@
                     </div>
                 </div>
                 <img src="./images/how-it-vendor/vendor-step-img-05.jpg" class="step-content-image"/>
+                <img class="step-back-graphics" src="./images/how-it-vendor/step-graphic-2.png"/>
             </div>
         </div>
 
@@ -1020,12 +1041,14 @@
 
     <!-- Main javascript-->
     <script  src="js/Header2.js"></script>
+    <script  src="js/videopopup.js"></script>
     <script  src="js/vendor/vendor-why.js"></script>
     <script  src="js/vendor/what-makes-vendor.js"></script>
     <script  src="js/vendor/vendor-key-points.js"></script>
     <script  src="js/vendor/how-you-make-money.js"></script>
     <script  src="js/vendor/how-it-works.js"></script>
     <script  src="js/contactus.js"></script>
+    <script  src="js/ckin.js"></script>
 
 
     

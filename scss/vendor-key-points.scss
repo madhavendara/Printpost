@@ -88,6 +88,11 @@
                 opacity: 1;
             }
         }
+
+        @media (orientation: portrait) 
+        {
+            display: none;
+        }
     }
     
 }
@@ -116,6 +121,8 @@
     position: relative;
     top : 0;
     left: 0;
+    min-width: 4797px;
+    min-height: 1600px;
     // transition: 1s all;
     // animation-name: areYAAr;
     // animation-duration: 24s;
@@ -172,6 +179,7 @@
             position: relative;
             z-index: 1;
             max-width : 18.75rem;
+            object-fit: cover;
         }
 
         h6

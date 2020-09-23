@@ -114,6 +114,8 @@ body {
 section {
   max-width: 100%;
   overflow: hidden;
+  width: 100%;
+  min-height: 1px;
 }
 
 /* ===================================
@@ -125,6 +127,13 @@ section {
   width: 70rem;
   margin: 0 auto;
   align-items: center;
+}
+@media (orientation: portrait) {
+  .content-row {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 .content-row .content-col-1 {
   flex-basis: 25%;
@@ -685,6 +694,37 @@ h6 {
 }
 
 /* ===================================
+    videocss Styles  
+====================================== */
+#artist-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 99999;
+}
+#artist-video #videCont {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+#artist-video #videCont video {
+  width: 100%;
+  height: auto;
+}
+#artist-video .video-close {
+  position: absolute;
+  right: 13%;
+  top: 4%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* ===================================
     Vendor-why styles
 ====================================== */
 .btn-outline {
@@ -798,6 +838,18 @@ h6 {
   width: 35rem;
   right: 2%;
 }
+@media (orientation: portrait) {
+  #vendor-why {
+    padding-top: 20rem;
+    position: relative;
+    padding-bottom: 10rem;
+  }
+  #vendor-why .btn-gredient, #vendor-why .btn-outline {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
 
 @keyframes loopImg {
   from {
@@ -814,6 +866,19 @@ h6 {
   position: relative;
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+@media (orientation: portrait) {
+  #what-makes-vendor {
+    padding-top: 14rem;
+  }
+  #what-makes-vendor .play-video {
+    width: 161px;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: -14% !important;
+    right: 0;
+  }
 }
 #what-makes-vendor .content-row {
   position: relative;
@@ -852,6 +917,16 @@ h6 {
 #what-makes-vendor .content-row .paragraph-container .play-video .play-icon {
   width: 100%;
 }
+@media (orientation: portrait) {
+  #what-makes-vendor .content-row .paragraph-container .play-video {
+    width: 161px;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: -8%;
+    right: 0;
+  }
+}
 #what-makes-vendor .content-row .paragraph-container p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -867,10 +942,9 @@ h6 {
   font-weight: 700;
   margin: 0;
   line-height: 100%;
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #333333;
   text-transform: uppercase;
-  font-size: 1rem;
   background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -958,6 +1032,11 @@ h6 {
 #vendor-key-points .keypoint-list .steps-title-active::after {
   opacity: 1;
 }
+@media (orientation: portrait) {
+  #vendor-key-points .keypoint-list {
+    display: none;
+  }
+}
 
 .images-grid {
   column-count: 24;
@@ -971,6 +1050,8 @@ h6 {
   position: relative;
   top: 0;
   left: 0;
+  min-width: 4797px;
+  min-height: 1600px;
 }
 
 .keys-points-container {
@@ -1010,6 +1091,7 @@ h6 {
   position: relative;
   z-index: 1;
   max-width: 18.75rem;
+  object-fit: cover;
 }
 .keys-points-container .keys-point-main h6 {
   font-size: 1.5rem;
@@ -1310,6 +1392,16 @@ h6 {
   width: 73%;
   margin-left: auto;
 }
+@media (orientation: portrait) {
+  #how-you-make-money .step-section .product-card {
+    margin-right: auto;
+  }
+}
+@media (orientation: portrait) {
+  #how-you-make-money .step-2 .step-section-graphics {
+    display: none;
+  }
+}
 #how-you-make-money .step-section-graphics img {
   display: block;
   width: 75%;
@@ -1414,6 +1506,36 @@ h6 {
   padding-top: 12rem;
   position: relative;
 }
+#how-it-works-vendor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 76.83%);
+  height: 5rem;
+}
+#how-it-works-vendor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 76.83%);
+  height: 16rem;
+}
+#how-it-works-vendor .content-row .col-50 {
+  position: relative;
+}
+#how-it-works-vendor .content-row .step-back-graphics {
+  position: absolute;
+  left: -8rem;
+  width: 11rem;
+  z-index: -1;
+  bottom: 2rem;
+}
 #how-it-works-vendor .how-it-steps {
   position: absolute;
   right: -14rem;
@@ -1463,6 +1585,21 @@ h6 {
   color: #333333;
   margin: 0;
   padding: 0;
+  font-size: 17px;
+}
+@media (orientation: portrait) {
+  #how-it-works-vendor .how-it-steps {
+    display: none;
+  }
+  #how-it-works-vendor .step-row .col-50 {
+    max-width: 100%;
+  }
+  #how-it-works-vendor .step-back-graphics {
+    width: 80%;
+  }
+  #how-it-works-vendor .steps-content .step-number {
+    flex: 2;
+  }
 }
 
 #demo {
@@ -1476,10 +1613,11 @@ h6 {
 #contactus {
   position: relative;
   z-index: 1;
-  padding-top: 3rem;
+  padding-top: 19rem;
   background: #fff;
 }
 #contactus h1 {
+  padding-bottom: 3rem;
   font-size: 2.8rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1541,7 +1679,7 @@ h6 {
   z-index: 1;
 }
 #contactus .contact-us .input-row .input-col {
-  flex-basis: 42%;
+  flex-basis: 49%;
   background: rgba(240, 240, 240, 0.67);
   font-size: 16px;
   font-family: "Lato", sans-serif;
@@ -1612,6 +1750,13 @@ h6 {
     width: 100%;
     margin-top: 2rem;
     padding: 2rem;
+  }
+  #contactus h1 {
+    font-size: 5.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    line-height: 110%;
   }
 }
 @keyframes round-circle {

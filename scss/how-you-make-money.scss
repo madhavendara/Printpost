@@ -55,6 +55,27 @@
             margin-left: auto;
 
         }
+
+        @media (orientation: portrait) {
+
+            .product-card
+            {
+                margin-right: auto;
+            }
+            
+        }
+    }
+
+    .step-2
+    {
+        @media (orientation: portrait) {
+
+            .step-section-graphics
+            {
+                display: none;
+            }
+            
+        }
     }
 
     .step-section-graphics

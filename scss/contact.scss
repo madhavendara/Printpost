@@ -2,10 +2,11 @@
 {
     position: relative;
     z-index: 1;
-    padding-top: 3rem;
+    padding-top: 19rem;
     background: #fff;
     h1
     {
+        padding-bottom: 3rem;
         strong
         {
             @include font-headline-1;
@@ -70,7 +71,7 @@
 
             .input-col
             {
-                flex-basis: 42%;
+                flex-basis: 49%;
                 background : rgba(240, 240, 240, 0.67);
                 font-size: 16px;
                 font-family: 'Lato', sans-serif;
@@ -151,6 +152,15 @@
                 padding : 2rem;
             }
         }
+                }
+
+                h1
+                {
+                    font-size: 5.5rem;
+                    padding-left: 2rem;
+                    padding-right: 1rem;
+                    box-sizing: border-box;
+                    line-height: 110%;
                 }
 
 

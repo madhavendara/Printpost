@@ -4,6 +4,19 @@
     padding-top: 7rem;
     padding-bottom: 7rem;
 
+    @media (orientation: portrait) {
+        .play-video
+        {
+            width: 161px;
+            display: block;
+            margin-left: auto;
+            position: absolute;
+            top: -14% !important;
+            right: 0;
+        }
+        padding-top: 14rem;
+    }
+
     .content-row
     {
         position: relative;
@@ -35,6 +48,18 @@
                     width: 100%;
                 }
             }
+
+            @media (orientation: portrait) {
+                .play-video
+                {
+                    width: 161px;
+                    display: block;
+                    margin-left: auto;
+                    position: absolute;
+                    top: -8%;
+                    right: 0;
+                }
+            }
             p
             {
                 @include paragraph;
@@ -47,10 +72,9 @@
                 font-weight: 700;
                 margin: 0;
                 line-height: 100%;
-                font-size: 1.2rem;
+                font-size: 18px;
                 color: #333333;
                 text-transform: uppercase;
-                font-size: 1rem;
                 background: linear-gradient(to right, #C50677 0%, #038AC7 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

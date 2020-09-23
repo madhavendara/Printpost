@@ -116,6 +116,8 @@ body {
 section {
   max-width: 100%;
   overflow: hidden;
+  width: 100%;
+  min-height: 1px;
 }
 
 /* ===================================
@@ -1632,10 +1634,11 @@ h6 {
 #contactus {
   position: relative;
   z-index: 1;
-  padding-top: 3rem;
+  padding-top: 19rem;
   background: #fff;
 }
 #contactus h1 {
+  padding-bottom: 3rem;
   font-size: 2.8rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -1697,7 +1700,7 @@ h6 {
   z-index: 1;
 }
 #contactus .contact-us .input-row .input-col {
-  flex-basis: 42%;
+  flex-basis: 49%;
   background: rgba(240, 240, 240, 0.67);
   font-size: 16px;
   font-family: "Lato", sans-serif;
@@ -1768,6 +1771,13 @@ h6 {
     width: 100%;
     margin-top: 2rem;
     padding: 2rem;
+  }
+  #contactus h1 {
+    font-size: 5.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    line-height: 110%;
   }
 }
 /* ===================================
